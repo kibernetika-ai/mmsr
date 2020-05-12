@@ -35,7 +35,9 @@ cfg = {
         "w_TSA": False,
         "center": None,
     },
-    "path": {},
+    "path": {
+        "strict_load": False,
+    },
     "is_train": False,
     "train": False,
     "dist": False,
