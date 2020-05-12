@@ -34,6 +34,7 @@ cfg = {
         "HR_in": False,
         "w_TSA": False,
     },
+    "is_train": False,
     "train": False,
     "dist": False,
 }
