@@ -58,6 +58,8 @@ def normalize(img: np.ndarray):
 
 def main():
     args = parse_args()
+    cfg['path']['pretrain_model_G'] = args.model
+
     model = create_model(cfg)
 
     vc = cv2.VideoCapture(args.video)
