@@ -85,7 +85,7 @@ def main():
             break
 
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        model.feed_data({'LQ': normalize(frame)}, need_GT=False)
+        model.feed_data({'LQs': normalize(frame)}, need_GT=False)
         model.test()
         outputs = model.get_current_visuals(need_GT=False)
         __import__('ipdb').set_trace()
